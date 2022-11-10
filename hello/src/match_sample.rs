@@ -10,6 +10,6 @@ pub fn match_sample() -> () {
     match c {
         Color::Red => println!("Red"),
         Color::Blue => println!("Blue"),
-        // Color::Green => println!("Green"),
+        Color::Green => println!("Green"),
     }
 }
