@@ -1,4 +1,4 @@
-mod match_sample;
+mod iterator_sample;
 fn main() {
-    match_sample::match_sample();
+    iterator_sample::iterator_sample();
 }
