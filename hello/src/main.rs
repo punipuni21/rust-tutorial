@@ -1,4 +1,5 @@
-mod result_sample;
+mod box_sample;
 fn main() {
-    result_sample::result_sample()
+    let byte_array = [b'h', b'e', b'l', b'l', b'o'];
+    box_sample::print(byte_array);
 }
