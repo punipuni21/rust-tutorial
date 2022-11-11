@@ -1,10 +1,4 @@
-mod impl_sample;
+mod macro_sample;
 fn main() {
-    let p = impl_sample::Person {
-        name: String::from("Taro"),
-        age: 20,
-    };
-
-    p.say_name();
-    p.say_age();
+    macro_sample::macro_sample();
 }
