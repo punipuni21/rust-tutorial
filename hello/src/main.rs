@@ -1,4 +1,4 @@
-mod macro_sample;
+mod macro_sample2;
 fn main() {
-    macro_sample::macro_sample();
+    macro_sample2::macro_sample2();
 }
