@@ -1,18 +1,11 @@
-use tweet::Tweet;
+use std::vec;
 
-mod animal;
-mod tweet;
+mod generics;
+use generics::make_tuple;
 
 fn main() {
-    let dove = animal::Dove {};
-    dove.tweet();
-    dove.tweet_twice();
-    dove.shout();
-
-    let duck = animal::Duck {};
-
-    let bird_vec: Vec<Box<dyn Tweet>> = vec![Box::new(dove), Box::new(duck)];
-    for bird in bird_vec {
-        bird.tweet();
-    }
+    let t1 = make_tuple(1, 1);
+    let t2 = make_tuple("Hello", "World");
+    let t3 = make_tuple(vec![1, 2, 3], vec![4, 5]);
+    let t4 = make_tuple(3, "years old");
 }
