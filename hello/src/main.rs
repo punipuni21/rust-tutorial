@@ -1,6 +1,6 @@
 use std::vec;
-mod droppable;
+mod thread_sample2;
 
 fn main() {
-    droppable::droppable();
+    thread_sample2::thread_sample2();
 }
