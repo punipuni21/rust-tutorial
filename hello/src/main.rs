@@ -1,6 +1,6 @@
 use std::vec;
-mod thread_sample4;
+mod thread_sample5;
 
 fn main() {
-    thread_sample4::thread_sample4();
+    thread_sample5::thread_sample5();
 }
