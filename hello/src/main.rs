@@ -1,6 +1,7 @@
-use std::vec;
-mod thread_sample5;
+use async_sample::find_by_user_id;
+use futures::executor;
+mod async_sample;
 
 fn main() {
-    thread_sample5::thread_sample5();
+    executor::block_on(find_by_user_id(Db {}, UserId(u1)));
 }
