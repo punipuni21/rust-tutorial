@@ -3,5 +3,5 @@ use futures::executor;
 mod async_sample;
 
 fn main() {
-    executor::block_on(find_by_user_id(Db {}, UserId(u1)));
+    executor::block_on(find_by_user_id(Db {}, UserId(1)));
 }
