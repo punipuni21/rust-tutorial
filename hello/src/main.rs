@@ -1,7 +1,6 @@
-mod async_sample2;
+mod async_move;
 use futures::executor;
-mod future_sample;
 
 fn main() {
-    executor::block_on(async_sample2::something_greet_async_function());
+    executor::block_on(async_move::move_to_async_block());
 }
