@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 futures = "0.3.25"
-tokio = {version = "0.2.21",futures=["macros"]}
+tokio = {version = "1.22.0",futures=["macros"]}
