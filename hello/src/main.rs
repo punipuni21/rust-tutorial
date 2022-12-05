@@ -1,6 +1,11 @@
-mod async_move;
-use futures::executor;
+mod tokio_sample;
 
-fn main() {
-    executor::block_on(async_move::move_to_async_block());
+async fn add(left: i32, right: i32) -> i32 {
+    left + right
+}
+
+#[tokio::main]
+async fn main() {
+    let ans = add(2, 3).await;
+    println!("{}", ans);
 }
