@@ -1,2 +1,2 @@
-mod assert_sample;
+mod panic_test_sample;
 fn main() {}
